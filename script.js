@@ -6,18 +6,18 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var char = []
 
-  var input1 = prompt('Would you like lowercase characters?\nType Y for YES, leave blank for NO.')
-  if (input1 == 'Y') {
+  var input1 = confirm('Would you like lowercase characters?')
+  if (input1) {
     char.push("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
   }
 
-  var input2 = prompt('Would you like uppercase characters?\nType Y for YES, leave blank for NO.')
-  if (input2 == 'Y') {
+  var input2 = confirm('Would you like uppercase characters?')
+  if (input2) {
     char.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
   }
 
-  var input3 = prompt('Would you like special characters?\nType Y for YES, leave blank for NO.')
-  if (input3 == 'Y') {
+  var input3 = confirm('Would you like special characters?')
+  if (input3) {
     char.push("!", "?", "@", "$", "%", "#", "^", "&", "*", "_", "+")
   }
 
